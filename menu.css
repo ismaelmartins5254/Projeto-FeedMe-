@@ -15,25 +15,37 @@ h2{
     font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .img_menu{
-    background-color: #9c9a9a;
-    width: 70%;
-    margin: 16%;
+    width: 70vh;
+    margin: 16vh;
+    margin-top: -5px;
+    text-align: center;
+    align-items: center;
 }
+
 .img_menu img{
-    width: 50%;
-    min-width: 90%;
-    height: 80%;
-    min-height: 80%;
+    width: 25vw;
+    min-width: 15vw;
+    height: 30vh;
+    min-height: 10vh;
     margin: 0 2px;
+    margin: 5px 8px;
 }
+
 .img_menu ul{
     display: flex;
     list-style-type: none;
-    
 }
-.baixo ul li{
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
+
+.img_menu p{
+    font-size: 20px;   
+}
+
+.img_menu p:hover{
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 25px;
 }
