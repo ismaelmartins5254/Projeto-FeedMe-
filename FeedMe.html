@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>FeedMe!</title>
+    <script type="text/javascript">
+       
+        function slide1(){
+            document.getElementById('slider').src="./imagem/slide_comida.jpg"
+            setTimeout("slide2()", 2000)
+        }
+        
+        function slide2(){
+            document.getElementById('slider').src="./imagem/feijoada.jpg"
+            setTimeout("slide3()", 2000)
+        }
+        function slide3(){
+            document.getElementById('slider').src='./imagem/cafe.jpg'
+            setTimeout('slide1()', 2000)
+        }
+        
+        </script>
+</head>
+<body  onLoad="slide1()">
+    <main>
+        <header>
+            <img src="imagem/logo.jpeg" alt="logo_feedMe">
+            <nav>
+                <a href="reserva.html">reservar mesa</a>
+                <a href="#">menus</a>
+                <a href="sobrenos.html">sobre nós</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+        <img id="slider">
+        <div class="content">
+            </div>
+            <div class="hr-funcio">
+                <h2>Horario de funcionamento</h2>
+                <img src="./imagem/prato-horario.jpg" alt="prato-queijos">
+                <ul>
+                    <li>Segunda a Sexta: 15:00 as 00:00 hrs</li>
+                    <li>Sabado e Domingo: 15:00 as 22:00 hrs</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

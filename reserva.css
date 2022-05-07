@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ebc79c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cadastro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    margin-top: 20vh;
+   
+    height: 50vh;
+}
+h2{
+    display: flex;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    font-weight: lighter;
+    color: white;
+    background-color: #000000;
+    height: 10vh;
+    width: 30vw;
+    border-radius: 5vh 0vh 5vh 0vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.3vh 0.5vh 0.9vh #000000;
+}
+
+.inputs{
+    text-align: center;
+    margin-top: 10%;
+    
+}
+
+#nome{
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    border-radius: 0.5vh;
+    margin-bottom: 1%;
+    text-align: center;
+    box-shadow: 0.1vh 0.2vh 0.4vh #000000;
+}
+#dataRes{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 0.5vh;
+    margin-bottom: 1%;
+    text-align: center;
+    border: none;
+    box-shadow: 0.1vh 0.2vh 0.4vh #000000;
+}
+#hora{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 0.5vh;
+    margin-bottom: 1%;
+    border: none;
+    box-shadow: 0.1vh 0.2vh 0.4vh #000000;
+}
+
+#botao{
+    border: none;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 3px;
+    background-color: #faf5f5;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1vw;
+    box-shadow: 0.1vh 0.2vh 0.9vh #000000;
+}
+#botao:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.5s;
+}
+@media screen and (max-width:800px){
+    
+    .cadastro{
+        width: 50vw;
+    }
+    h2{
+        width: 70vw;
+    }
+    #nome{
+        width: 40vw;
+        height: 5vh;
+        border-radius: 1vw;
+    }
+    #dataRes{
+        width: 40vw;
+        height: 5vh;
+        border-radius: 1vh;
+    }
+    #hora{
+        width: 40vw;
+        height: 5vh;
+        border-radius: 1vh;
+        text-align: center;
+        
+    }
+    #botao{
+        width: 20vw;
+    }
+}

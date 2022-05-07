@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --cor1: #ffefb0;
+  --cor2: #ffcb7c;
+  --cor3: #FFB74D;
+  --cor4: #AE582D;
+}
+
+body {
+  background-color: var(--cor1);
+}
+
+header {
+  background-color: var(--cor3);
+  padding-top: 17px;
+  margin-bottom: 35px;
+}
+
+header > img {
+    width: 9.5%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+.foto {
+    display: block;
+    margin: auto;
+}
+
+nav {
+  padding-bottom: 10px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.164);
+  margin-bottom: 12px;
+}
+
+nav > a {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--cor4);
+  transition-duration: 0.5s;
+}
+
+nav > A:hover {
+  background-color: var(--cor2);
+}
+.carrossel{
+  text-align: center;
+}
+
+.hr-funcio{
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: 'Crete Round', serif;
+  
+  
+}
+.hr-funcio img{
+  margin-top: 2%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.438);
+  width: 75%;
+  height: 550px;
+  margin-bottom: 10px;
+}
+.hr-funcio h2{
+  margin-top: 9%;
+}
+.hr-funcio ul li {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao{
+  border: none;
+  border-radius: 3px;
+  margin-top: 1.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: var(--cor1);
+  
+}
+
+.botao:hover {
+  font-weight: bold;
+  
+}
+
+img#slider{
+  max-width: 750px;
+  min-width: 750px;
+  max-height: 400px;
+  min-height: 250px;
+  display: block;
+  margin: auto;
+
+}
