@@ -42,7 +42,7 @@ h2{
 }
 
 .img_menu p:hover{
-    background-color: aliceblue;
+    background-color: #ca9f6a;
     border-radius: 5px;
     cursor: pointer;
     transition: 1s;
