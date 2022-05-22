@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>FeedMe!</title>
-    <script type="text/javascript">
+    <script type="text/javascript" defer>
        
         function slide1(){
             document.getElementById('slider').src="./imagem/slide_comida.jpg"
@@ -22,32 +23,56 @@
             document.getElementById('slider').src='./imagem/cafe.jpg'
             setTimeout('slide1()', 2000)
         }
-        
         </script>
 </head>
 <body  onLoad="slide1()">
     <main>
         <header>
-            <img src="imagem/logo.jpeg" alt="logo_feedMe">
+          <h1>Caseiro Da Casa</h1>
             <nav>
                 <a href="reserva.html">reservar mesa</a>
                 <a href="menu.html">menus</a>
                 <a href="sobrenos.html">sobre nós</a>
                 <a href="#">Contato</a>
+                <div class="hr-funcio">
+                    <h2>Horario de Funcionamento</h2>
+                        <p>
+                            Segunda a Sexta: 15:00 as 00:00 hrs
+                        </p>
+                        <p>
+                            Sabado e Domingo: 18:00 as 22:00 hrs
+                        </p>
+                    </ul>
+                </div>
             </nav>
         </header>
-        <img id="slider">
+       
         <div class="content">
-            </div>
-            <div class="hr-funcio">
-                <h2>Horario de funcionamento</h2>
-                <img src="./imagem/prato-horario.jpg" alt="prato-queijos">
-                <ul>
-                    <li>Segunda a Sexta: 15:00 as 00:00 hrs</li>
-                    <li>Sabado e Domingo: 15:00 as 22:00 hrs</li>
-                </ul>
+            <img id="slider">
+        </div>
+        <div class="eventos"> 
+                <img src= "https://via.placeholder.com/150" alt="prato-queijos">
+         </div>
+    </main>
+
+    <div> <!-- inicio do menu responsivo:)-->
+        <div class="container">
+            <input type="checkbox" id="checkbox-menu">
+        
+            <label for="checkbox-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              
+            </label>
+            <div class="itens">
+                <a href="reserva.html">reservar mesa</a> <br>
+                <a href="menu.html">menus</a> <br>
+                <a href="sobrenos.html">sobre nós</a> <br>
+                <a href="#">Contato</a> 
             </div>
         </div>
-    </main>
+
+    </div>
 </body>
 </html>
