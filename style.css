@@ -70,11 +70,57 @@ nav > A:hover {
    font-size: 15px;
 }
 
-.carrossel{
-  text-align: center;
 
- 
+/* inicio slide*/
+.slider{
+  overflow: hidden;
+  text-align:center;
+  align-items: center;
+
 }
+
+.slide{
+  margin: 15px;
+  cursor:pointer; 
+  
+}
+
+.slider-item img{
+  width: 95vw;
+  height: 90vh;
+  border-radius: 5px;
+}
+
+.slider > .slider-content{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  transition: all 500ms ease;
+
+}
+
+.slider > .slider-content > .slider-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+  transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+  transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slider-content{
+  transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+  transform: translateX(-300%);
+}
+
+
+/* fim slide */
 
 .eventos{
   display: block;
@@ -114,8 +160,11 @@ img#slider{
   display: block;
   margin: auto;
   border-radius: 7px;
+
     
 }
+
+
 
 .container{
   display:none;

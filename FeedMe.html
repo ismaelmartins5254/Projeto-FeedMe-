@@ -5,27 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>FeedMe!</title>
-    <script type="text/javascript" defer>
-       
-        function slide1(){
-            document.getElementById('slider').src="./imagem/slide_comida.jpg"
-            setTimeout("slide2()", 2000)
+
+    <script>
+        let cont = 1
+        document.getElementById('img1').checked = true
+        
+        setInterval(function(){
+            proxImg()
+        }, 2000)
+
+        function proxImg(){
+            cont++
+            if(cont>=3){
+                cont = 1
+            }
+            document.getElementById('img'+cont).checked = true
         }
         
-        function slide2(){
-            document.getElementById('slider').src="./imagem/feijoada.jpg"
-            setTimeout("slide3()", 2000)
-        }
-        function slide3(){
-            document.getElementById('slider').src='./imagem/cafe.jpg'
-            setTimeout('slide1()', 2000)
-        }
-        </script>
+    </script>
+
+
+       
 </head>
-<body  onLoad="slide1()">
+<body>
     <main>
         <header>
           <h1>Caseiro Da Casa</h1>
@@ -47,9 +51,25 @@
             </nav>
         </header>
        
-        <div class="content">
-            <img id="slider">
-        </div>
+        <section class="slider">
+            <input name='slide' type="radio" class="slide" id="img1">
+            <input name='slide' type="radio" class="slide" id="img2">
+            <input name='slide' type="radio" class="slide" id="img3">
+            
+        
+            <div class="slider-content">
+                <div class="slider-item">
+                    <img src="imagem/cafe.jpg">
+                </div>
+                <div class="slider-item">
+                    <img src="imagem/slide_comida.jpg" alt="slide2">
+                </div>
+                <div class="slider-item">
+                    <img src="imagem/feijoada.jpg" alt="slide 3">
+                </div>
+                
+            </div>
+        </section>
         <div class="eventos"> 
                 <img src= "https://via.placeholder.com/150" alt="prato-queijos">
          </div>
