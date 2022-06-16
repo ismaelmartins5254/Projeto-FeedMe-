@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madeiro</title>
+    <link rel="stylesheet" href="reserva.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="cadastro"  action="processo.php"  method="POST"> 
+        <h2>Reserva</h2>
+        <form class="inputs" action="processo.php"  method="POST">
+            <input type="text" name="nome" placeholder="Digite seu nome" id="nome"><br>
+            <input type="date" name="dataRes" id="dataRes"><br>
+            <input type="time" name="hora" id="hora"><br>
+            <input type="button" value="Reservar" onclick="reserva()" id="botao">
+        </form>
+    </div>
+
+
+    <script>
+        var nome = document.getElementById('nome')
+        var data = document.getElementById('dataRes')
+        var hora = document.getElementById('hora')
+        function reserva(){
+        if (nome.value==0||data.value==0||hora.value==0) {
+            alert('voce deixou um item em aberto')
+        }
+        }
+    </script>
+</body>
+</html>         

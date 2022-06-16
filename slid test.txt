@@ -1,0 +1,36 @@
+  <!--inicio do slide-->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+ 
+            <div class="slide first">
+                <img src="./imagem/feijoada.jpg">
+            </div>
+            <div class="slide">
+                 <img src="./imagem/cafe.jpg">
+            </div> 
+            <div class="slide">
+                 <img src="./imagem/slide_comida.jpg">
+            </div> 
+
+            <div class="navigation_auto">
+                <div class="auto_btn1">
+                    
+                </div>
+                <div class="auto_btn2">
+
+                </div>
+                <div class="auto_btn3">
+
+                </div>
+
+            </div>
+            <div class="manual_navigation">
+                <label for="radio1" class="manual_btn"></label>
+                <label for="radio2" class="manual_btn"></label>
+                <label for="radio3" class="manual_btn"></label>
+            </div>
+         </div> 
+        </div>

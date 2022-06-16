@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
 *{
     padding: 0;
     margin: 0;
 }
 
 body{
-    background-color: #ebc79c;
-    width: 1000px;
+    background-color: #ca3f1f;
+    width: 100%;
+    background-image: url('imagem/fundo-de-madeira.webp');
+    background-size: 100% 100%;
 }
 
 h2{
@@ -13,8 +17,10 @@ h2{
     align-items: center;
     margin: 50px 0;
     font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Merienda', cursive;
+    color: #000000;
 }
+
 
 .img_menu{
     width: 70vh;
@@ -30,6 +36,8 @@ h2{
     height: 30vh;
     min-height: 10vh;
     margin: 5px 8px;
+    box-shadow:3px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
 
 .img_menu ul{
@@ -38,13 +46,24 @@ h2{
 }
 
 .img_menu p{
-    font-size: 20px;   
+    font-size: 22px; 
 }
 
-.img_menu p:hover{
-    background-color: #ca9f6a;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 1s;
-    font-size: 25px;
+.lorem{
+    display: none;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 130px;
+    color: #c4c4c4;
+    
+}
+
+.img:hover{
+    transform: rotateY(150deg);
+    transition-duration: 2s;
+}
+
+.img:hover ~ .lorem{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.466);
 }

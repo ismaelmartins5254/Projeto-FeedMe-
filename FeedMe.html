@@ -5,94 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./eventos/evento.css">
+    
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>FeedMe!</title>
-
-    <script>
-        let cont = 1
-        document.getElementById('img1').checked = true
-        
-        setInterval(function(){
-            proxImg()
-        }, 2000)
-
-        function proxImg(){
-            cont++
-            if(cont>=3){
-                cont = 1
-            }
-            document.getElementById('img'+cont).checked = true
-        }
-        
-    </script>
-
-
-       
+    <title>Madeiro</title>
+    <script src="slide.js"></script>
+    
+   
 </head>
-<body>
+<body onload="imagem1()">
     <main>
         <header>
-          <h1>Caseiro Da Casa</h1>
+          <h1>madeiro</h1>
             <nav>
-                <a href="reserva.html">reservar mesa</a>
-                <a href="menu.html">menus</a>
-                <a href="sobrenos.html">sobre nós</a>
-                <a href="#">Contato</a>
-                <div class="hr-funcio">
-                    <h2>Horario de Funcionamento</h2>
-                        <p>
-                            Segunda a Sexta: 15:00 as 00:00 hrs
-                        </p>
-                        <p>
-                            Sabado e Domingo: 18:00 as 22:00 hrs
-                        </p>
-                    </ul>
-                </div>
+                <a href="reserva.html">Reservar mesa</a>
+                <a href="menu.html">Menus</a>
+                <a href="sobrenos.html"> Sobre Nós</a>
             </nav>
         </header>
-       
-        <section class="slider">
-            <input name='slide' type="radio" class="slide" id="img1">
-            <input name='slide' type="radio" class="slide" id="img2">
-            <input name='slide' type="radio" class="slide" id="img3">
-            
-        
-            <div class="slider-content">
-                <div class="slider-item">
-                    <img src="imagem/cafe.jpg">
-                </div>
-                <div class="slider-item">
-                    <img src="imagem/slide_comida.jpg" alt="slide2">
-                </div>
-                <div class="slider-item">
-                    <img src="imagem/feijoada.jpg" alt="slide 3">
-                </div>
-                
-            </div>
-        </section>
-        <div class="eventos"> 
-                <img src= "https://via.placeholder.com/150" alt="prato-queijos">
-         </div>
-    </main>
+        <div class="todo-slide">
 
-    <div> <!-- inicio do menu responsivo:)-->
-        <div class="container">
-            <input type="checkbox" id="checkbox-menu">
-        
-            <label for="checkbox-menu">
-              <span></span>
-              <span></span>
-              <span></span>
-              
-            </label>
-            <div class="itens">
-                <a href="reserva.html">reservar mesa</a> <br>
-                <a href="menu.html">menus</a> <br>
-                <a href="sobrenos.html">sobre nós</a> <br>
-                <a href="#">Contato</a> 
-            </div>
+          <div class="btn">
+      
+            <button onclick="imagem1()" id='btn1'></button>
+            <button onclick="imagem2()" id="btn2"></button>
+            <button onclick="imagem3()" id="btn3"></button>
+      
+          </div>
+      
+          <div class="img-slider">
+            
+            <img alt="slide1" class="img" id="imagem1">
+            
+          </div>
+        </div> <!--fim de todo o slide-->
+
+        <div class="eventos">
+          
         </div>
 
-    </div>
+        <div class="saudacoes">
+          <h3>Eventos da Semana</h3>
+      </div>
+      <div class="todo-evento">
+         
+          <div class="imagens">
+              <img src="" alt="" id="imagem">
+          </div>
+          
+              <span id="span"></span>
+          
+          <div class="botoes">
+              <button onclick="imagem()" class="botao"  id="botao1" checked></button>
+              <button onclick="image2()" class="botao"  id="botao2"></button>
+              <button onclick="image3()" class="botao"  id="botao3"></button>
+              
+          </div>
+      </div>
+    </main>
 </body>
 </html>

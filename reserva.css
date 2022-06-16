@@ -3,7 +3,8 @@
     margin: 0;
 }
 body{
-    background-color: #ebc79c;
+    background-color: #e4ab9e;
+    /*background-color: #ebc79c;*/
     justify-content: center;
     align-items: center;
     display: flex;
